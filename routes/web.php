@@ -33,3 +33,13 @@ use App\Http\Controllers\SendEmailController;
 //     });
 //     return 'salom';
 // });
+// Route::any('telegramsecret',
+// [\App\Http\Controllers\TelegramBotController::class,
+//     'get_data_from_tg']);
+Route::any('/',function(){
+    \Illuminate\Support\Facades\Http::post('https://api.telegram.org/bot5700223914:AAE9TvqAgjPOhFgZNF2YV_-BrxeJ5pvyuTY/sendMessage',[
+        'chat_id' => 1082454723,
+            'text' => 'Hello World',
+            'parse_mode'=>'html'
+    ]);
+});

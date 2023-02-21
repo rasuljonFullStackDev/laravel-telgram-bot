@@ -36,7 +36,7 @@ return [
             'commands' => [
                 //Acme\Project\Commands\MyTelegramBot\BotCommand::class
             ],
-            
+
         ],
 
             //    'mySecondBot' => [
@@ -206,8 +206,8 @@ return [
     |
     */
     'shared_commands' => [
-        // 'start' => Acme\Project\Commands\StartCommand::class,
-        // 'stop' => Acme\Project\Commands\StopCommand::class,
-        // 'status' => Acme\Project\Commands\StatusCommand::class,
+        'start' => Acme\Project\Commands\StartCommand::class,
+        'stop' => Acme\Project\Commands\StopCommand::class,
+        'status' => Acme\Project\Commands\StatusCommand::class,
     ],
 ];
