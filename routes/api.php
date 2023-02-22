@@ -26,12 +26,12 @@ Route::get('/bot/test', function() {
     //     Vendor\Project\TestCommand::class,
     //     Vendor\Project\StartCommand::class,
     //  ]);
-    $reply_markup = Telegram::replyKeyboardHide();
+    // $reply_markup = Telegram::replyKeyboardHide();
 
 $response = Telegram::sendMessage([
     'chat_id' => '1082454723',
     'text' => 'Hello World',
-    'reply_markup' => $reply_markup
+    // 'reply_markup' => json_encode(['s'=>'s'])
 ]);
     return $response;
 });
